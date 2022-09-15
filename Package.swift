@@ -16,7 +16,7 @@ let package = Package(
   targets: [
     .target(
         name: "RxCoreData",
-        dependencies: ["RxSwift", "RxCocoa"],
+        dependencies: ["RxSwift", .product(name: "RxCocoa", package: "RxSwift")],
         path: "Sources"),
   ]
 )
